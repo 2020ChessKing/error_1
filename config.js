@@ -1,4 +1,4 @@
-import * as firebase from 'firebase';
+import firebase from 'firebase';
 require('@firebase/firestore');
 
   // Your web app's Firebase configuration
@@ -13,9 +13,9 @@ require('@firebase/firestore');
   };
   // Initialize Firebase
   
-  if(!firebase.apps.length)
-  {
+  // if(!firebase.apps.length)
+  // {
     firebase.initializeApp(firebaseConfig);
-  }
+  // }
 
 export default firebase.firestore();
